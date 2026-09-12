@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="StaySphere property discovery and booking project built by Anshu Dayal.">
+  <title>StaySphere | Airbnb-style Property Discovery</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="StaySphere home">
+      <span class="brand-mark">S</span>
+      <span>StaySphere</span>
+    </a>
+    <nav class="main-nav" aria-label="Primary navigation">
+      <a href="#stays">Explore stays</a>
+      <a href="#about">About project</a>
+      <button class="host-button" type="button" data-host-button>Become a host</button>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow">Built by Anshu Dayal</p>
+        <h1 id="hero-title">Find a place that feels like yours.</h1>
+        <p class="hero-text">A responsive property discovery experience built by Anshu Dayal with reusable cards, search, filters, and booking interactions.</p>
+      </div>
+      <form class="search-panel" data-search-form>
+        <label>
+          <span>Where</span>
+          <input type="search" name="location" placeholder="Search destinations" data-location-input>
+        </label>
+        <label>
+          <span>Guests</span>
+          <select name="guests" data-guest-select>
+            <option value="0">Any guests</option>
+            <option value="1">1+ guest</option>
+            <option value="2">2+ guests</option>
+            <option value="4">4+ guests</option>
+            <option value="6">6+ guests</option>
+          </select>
+        </label>
+        <button class="search-button" type="submit">Search stays</button>
+      </form>
+    </section>
+
+    <section class="category-bar" aria-label="Stay categories">
+      <button class="category active" type="button" data-category="all">All stays</button>
+      <button class="category" type="button" data-category="beach">Beach</button>
+      <button class="category" type="button" data-category="mountain">Mountain</button>
+      <button class="category" type="button" data-category="city">City</button>
+      <button class="category" type="button" data-category="cabin">Cabin</button>
+    </section>
+
+    <section class="stays-section" id="stays" aria-labelledby="stays-title">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Curated for your next trip</p>
+          <h2 id="stays-title">Popular stays</h2>
+        </div>
+        <p class="result-count" data-result-count>6 stays</p>
+      </div>
+
+      <div class="listing-grid" data-listing-grid>
+        <article class="listing-card" data-listing data-location="goa" data-category="beach" data-guests="4">
+          <div class="listing-image image-goa"><span class="tag">Guest favourite</span><button class="save-button" type="button" aria-label="Save Goa stay" data-save-button>♡</button></div>
+          <div class="listing-content"><div><h3>Sunset house in Goa</h3><p>Goa, India</p></div><strong>₹4,200 <small>night</small></strong></div>
+          <p class="listing-meta">4 guests · 2 bedrooms · ★ 4.9</p>
+        </article>
+
+        <article class="listing-card" data-listing data-location="gangtok" data-category="mountain" data-guests="2">
+          <div class="listing-image image-gangtok"><span class="tag">Mountain view</span><button class="save-button" type="button" aria-label="Save Gangtok stay" data-save-button>♡</button></div>
+          <div class="listing-content"><div><h3>Cloudline retreat</h3><p>Gangtok, Sikkim</p></div><strong>₹3,100 <small>night</small></strong></div>
+          <p class="listing-meta">2 guests · 1 bedroom · ★ 4.8</p>
+        </article>
+
+        <article class="listing-card" data-listing data-location="manali" data-category="mountain" data-guests="6">
+          <div class="listing-image image-manali"><span class="tag">New</span><button class="save-button" type="button" aria-label="Save Manali stay" data-save-button>♡</button></div>
+          <div class="listing-content"><div><h3>Pine &amp; peak lodge</h3><p>Manali, Himachal Pradesh</p></div><strong>₹5,800 <small>night</small></strong></div>
+          <p class="listing-meta">6 guests · 3 bedrooms · ★ 4.7</p>
+        </article>
+
+        <article class="listing-card" data-listing data-location="mumbai" data-category="city" data-guests="2">
+          <div class="listing-image image-mumbai"><span class="tag">Work friendly</span><button class="save-button" type="button" aria-label="Save Mumbai stay" data-save-button>♡</button></div>
+          <div class="listing-content"><div><h3>Harbour view studio</h3><p>Mumbai, Maharashtra</p></div><strong>₹2,900 <small>night</small></strong></div>
+          <p class="listing-meta">2 guests · 1 bedroom · ★ 4.6</p>
+        </article>
+
+        <article class="listing-card" data-listing data-location="jaipur" data-category="city" data-guests="4">
+          <div class="listing-image image-jaipur"><span class="tag">Heritage stay</span><button class="save-button" type="button" aria-label="Save Jaipur stay" data-save-button>♡</button></div>
+          <div class="listing-content"><div><h3>Rose city haveli</h3><p>Jaipur, Rajasthan</p></div><strong>₹3,700 <small>night</small></strong></div>
+          <p class="listing-meta">4 guests · 2 bedrooms · ★ 4.9</p>
+        </article>
+
+        <article class="listing-card" data-listing data-location="coorg" data-category="cabin" data-guests="4">
+          <div class="listing-image image-coorg"><span class="tag">Quiet escape</span><button class="save-button" type="button" aria-label="Save Coorg stay" data-save-button>♡</button></div>
+          <div class="listing-content"><div><h3>Rainforest cabin</h3><p>Coorg, Karnataka</p></div><strong>₹4,600 <small>night</small></strong></div>
+          <p class="listing-meta">4 guests · 2 bedrooms · ★ 4.8</p>
+        </article>
+      </div>
+      <p class="empty-state" data-empty-state hidden>No stays match your search. Try another destination or category.</p>
+    </section>
+
+    <section class="about-project" id="about" aria-labelledby="about-title">
+      <p class="eyebrow">About the build</p>
+      <h2 id="about-title">A practical full-stack foundation</h2>
+      <p>StaySphere is a property discovery and booking project built by Anshu Dayal, focused on responsive frontend development, search and filtering logic, listing data structures, reusable UI patterns, and booking-ready workflows.</p>
+      <div class="tech-list"><span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>REST API ready</span><span>MongoDB ready</span></div>
+      <a class="github-link" href="https://github.com/anshu429" target="_blank" rel="noopener noreferrer">View Anshu Dayal's GitHub projects</a>
+    </section>
+  </main>
+
+  <dialog class="host-dialog" data-host-dialog>
+    <button class="dialog-close" type="button" aria-label="Close host dialog" data-dialog-close>×</button>
+    <p class="eyebrow">Host onboarding</p>
+    <h2>Share your next great stay</h2>
+    <p>This demo flow is ready to connect to a backend listing form.</p>
+    <button class="search-button" type="button" data-dialog-close>Got it</button>
+  </dialog>
+  <script src="./script.js"></script>
+</body>
+</html>
