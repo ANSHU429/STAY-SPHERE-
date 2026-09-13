@@ -1,4 +1,4 @@
-# StaySphere | Airbnb-style Project
+# StaySphere 
 
 Full-stack property discovery foundation designed and implemented by Anshu Dayal.
 
